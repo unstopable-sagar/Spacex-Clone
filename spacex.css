@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-image1 {
+    background-image: url('SpaceX-Falcon-9-rocket-launch.jpg');
+    background-size: 100% 100%;
+}
+
+.background-image2 {
+    background-image: url('crew-dragon-returns.jpg');
+    background-size: 100% 100%;
+}
+
+.background-image3 {
+    background-image: url('starlink-mission.webp');
+    background-size: 100% 100%;
+}
+
+.background-image4 {
+    background-image: url('starship-update.webp');
+    background-size: 100% 100%;
+}
+
+.background-image5 {
+    background-image: url('moon-lander.webp');
+    background-size: 100% 100%;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    height: 14vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 69% 8%;
+    grid-template-rows: 14vh;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width:1010px) {
+    .navbar {
+        grid-template-columns: 60% 8%;
+    }
+}
+
+@media screen and (max-width:1010px) {
+    .navbar .mission {
+        display: none;
+    }
+}
+
+.navbar .logo a {
+    display: inline-block;
+}
+
+.navbar .logo img {
+    height: auto;
+    color: white;
+    width: 14vw;
+    padding-bottom: 8px;
+}
+
+@media screen and (max-width:1010px) {
+    .navbar .logo img {
+        height: auto;
+        width: 38vw;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .navbar .logo img {
+        height: auto;
+        width: 48vw;
+    }
+}
+
+.navbar .mission ul {
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+@media screen and (max-width:1072px) {
+    .navbar .mission ul {
+        padding-left: 5px;
+    }
+}
+
+.navbar .mission ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 17px;
+}
+
+@media screen and (max-width:1072px) {
+    .navbar .mission ul li {
+        padding-right: 15px;
+    }
+}
+
+.navbar .mission ul li a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: .5vh;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.navbar .mission ul li i {
+    display: block;
+    background-color: white;
+    height: .1vh;
+    width: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 500ms;
+}
+
+.navbar .mission ul li:hover i {
+    width: 100%;
+}
+
+.navbar .store {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    z-index: 2;
+}
+
+@media screen and (max-width:1010px) {
+    .navbar .store {
+        grid-template-columns: 100% ;    
+        position: absolute;
+        top: 5.5vh;
+        right: 5vh;
+    }
+}
+
+.navbar .store a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.navbar .store .shop {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (max-width:1010px) {
+    .navbar .store .shop {
+        display: none;
+    }
+}
+
+.navbar .store .shop h4 {
+    padding-bottom: .5vh;
+}
+
+.navbar .store .shop i {
+    display: block;
+    background-color: white;
+    height: .1vh;
+    width: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 500ms;
+}
+
+.navbar .store .shop:hover i {
+    width: 100%;
+}
+
+.navbar .store .fa-bars {
+    color: white;
+    padding-left: 20px;
+}
+
+.navbar .store .hamburger {
+    display: grid;
+    grid-template-columns: 0;
+    grid-template-rows: 0;
+    justify-items: end;
+    align-items: center;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    background-color: rgb(9, 3, 6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 30px;
+}
+
+.newBurger {
+    display: grid;
+    grid-template-columns: 260px;
+    grid-template-rows: repeat(6, 6vh);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 350px;
+    background-color: rgb(9, 3, 6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.navbar .store .newBurger .links {
+    border-bottom: .1vh solid rgb(83, 77, 77);
+    width: 260px;
+    margin: auto;
+    text-align: right;
+    height: 6vh;
+}
+.navbar .store .newBurger .link1{
+    color: white;
+    display: grid;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.navbar .store .newBurger a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: D-DIN-Regular, Arial, Verdana, sans-serif;
+    font-weight: 500;
+    line-height: 5vh;
+}
+
+.container .box {
+    padding-left: 110px;
+    width: 40%;
+    height: auto;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    bottom: 110px;
+}
+
+@media screen and (max-width:1310px) {
+    .container .box {
+        padding-left: 55px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container .box {
+        padding-left: 55px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container .box {
+        padding-left: 55px;
+        width: 80%;
+        bottom: 55px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container .box {
+        padding-left: 55px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .container .box {
+        padding-left: 55px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container .box {
+        padding-left: 15px;
+    }
+}
+
+.container .box p {
+    font-family: D-DIN-Medium, Arial, Verdana, sans-serif;
+    font-size: 20px;
+    padding-bottom: 8px;
+    overflow: hidden;
+    position: relative;
+    top: 80px;
+    opacity: 0;
+}
+
+@media screen and (max-width:600px) {
+    .container .box p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:200px) {
+    .container .box p {
+        font-size: 12px;
+    }
+}
+
+.container .box h1 {
+    font-family: D-DIN-Bold, Arial, Verdana, sans-serif;
+    font-size: 48px;
+    padding-bottom: 25px;
+    margin-left: -2px;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+@media screen and (max-width:600px) {
+    .container .box h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container .box h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:200px) {
+    .container .box h1 {
+        font-size: 14px;
+    }
+}
+
+.container .box a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: D-DIN-Bold, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: .3vh solid white;
+    padding: 25px 80px;
+    position: relative;
+    overflow: hidden;
+    top: 100px;
+    opacity: 0;
+}
+
+@media screen and (max-width:600px) {
+    .container .box a {
+        font-size: 12px;
+        padding: 20px 60px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container .box a {
+        font-size: 12px;
+        padding: 15px 40px;
+    }
+}
+
+.box a .text {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.box a .background {
+    background-color: white;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: height 500ms;
+    z-index: -1;
+}
+
+.box a:hover .background {
+    height: 100%;
+}
+
+.box a:hover .text {
+    color: black;
+}
+
+.footer {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer p span {
+    padding-right: 30px;
+}
+
+@media screen and (max-width:835px) {
+    .footer p span {
+        display: block;
+        padding-bottom: 10px;
+    }
+}
+
+.footer p a {
+    padding-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: D-DIN-Bold, Arial, Verdana, sans-serif;
+    transition: color 400ms;
+}
+
+@media screen and (max-width:835px) {
+    .footer p a {
+        padding-right: 10px;
+    }
+}
+
+.footer p span {
+    color: rgb(121, 110, 110);
+    font-family: D-DIN-Regular;
+    font-size: 12px;
+}
+
+.footer p a:hover {
+    color: rgb(148, 134, 134);
+}
