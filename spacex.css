@@ -8,6 +8,11 @@
     background-image: url('SpaceX-Falcon-9-rocket-launch.jpg');
     background-size: 100% 100%;
 }
+@media screen and (max-width:700px) {
+    .background-image1, .background-image2, .background-image3, .background-image4, .background-image5{
+        background-size: cover; 
+    }
+}
 
 .background-image2 {
     background-image: url('crew-dragon-returns.jpg');
@@ -27,6 +32,11 @@
 .background-image5 {
     background-image: url('moon-lander.webp');
     background-size: 100% 100%;
+}
+@media screen and (max-width:700px) {
+    .background-image1, .background-image2, .background-image3, .background-image4, .background-image5{
+        background-size: cover; 
+    }
 }
 
 .container {
@@ -139,8 +149,8 @@
     .navbar .store {
         grid-template-columns: 100% ;    
         position: absolute;
-        top: 5.5vh;
-        right: 5vh;
+        top: 40px;
+        right: 25px;
     }
 }
 
