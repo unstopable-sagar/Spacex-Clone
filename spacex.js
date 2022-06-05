@@ -1,3 +1,4 @@
+"use strict"
 // function myFunction() {
 // let x = document.getElementsByClassName('box')[0];
 // let y = x.getElementsByTagName('p')[0];
