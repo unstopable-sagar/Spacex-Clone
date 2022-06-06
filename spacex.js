@@ -39,8 +39,9 @@ function myFunction() {
 }
 
 function newClass() {
-  document.getElementsByClassName('hamburger')[0].className = 'newBurger';
-  document.getElementsByClassName('newBurger')[0].style.transition = 'all 700ms';
+  let trans = document.getElementsByClassName('hamburger')[0];
+  trans.className = 'newBurger';
+  trans.style.transition = 'all 700ms';
 }
 
 function closeTab() {
