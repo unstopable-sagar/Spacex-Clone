@@ -192,29 +192,29 @@
 }
 
 .navbar .store .fa-bars {
-    color: white;
+    color: #ffffff;
     padding-left: 20px;
 }
 
 .navbar .store .hamburger {
     display: grid;
-    grid-template-columns: 0;
-    grid-template-rows: 0;
-    justify-items: end;
+    grid-template-columns: 220px;
+    grid-template-rows: repeat(6, 6vh);
+    justify-items: center;
     align-items: center;
     height: 100vh;
     width: 0;
-    overflow: hidden;
     background-color: rgb(9, 3, 6);
     position: fixed;
     top: 0;
     right: 0;
     padding-top: 30px;
+    overflow: hidden;
 }
 
-.newBurger {
+.newburger {
     display: grid;
-    grid-template-columns: 260px;
+    grid-template-columns: 220px;
     grid-template-rows: repeat(6, 6vh);
     justify-content: center;
     align-items: center;
@@ -228,24 +228,34 @@
     overflow: hidden;
 }
 
-.navbar .store .newBurger .links {
+.navbar .store .newburger .links,
+.hamburger .links {
     border-bottom: .1vh solid rgb(83, 77, 77);
     width: 260px;
     margin: auto;
     text-align: right;
     height: 6vh;
 }
-.navbar .store .newBurger .links:hover a{
+.newburger .link1 {
+    width: 260px;
+    margin: 30px 30px 0 0;
+    text-align: right;
+    height: 6vh;
+}
+
+.navbar .store .newburger .links:hover a,
+.hamburger .links:hover a{
     color: rgb(123, 121, 121);
 }
-.navbar .store .newBurger .link1{
+.navbar .store .newburger .link1{
     color: white;
     display: grid;
     justify-content: end;
     cursor: pointer;
 }
 
-.navbar .store .newBurger a {
+.navbar .store .newburger a,
+.hamburger a {
     color: white;
     text-decoration: none;
     font-size: 16px;

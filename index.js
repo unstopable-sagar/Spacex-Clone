@@ -1,49 +1,34 @@
 "use strict"
-// function myFunction() {
-// let x = document.getElementsByClassName('box')[0];
-// let y = x.getElementsByTagName('p')[0];
-// y.style.top = '0';
-// y.style.opacity = '1';
-// y.style.transition = 'all 800ms';
-// let a = x.getElementsByTagName('h1')[0];
-// a.style.top = '0';
-// a.style.opacity = '1';
-// a.style.transition = 'all 900ms';
-// let b = x.getElementsByTagName('a')[0];
-// b.style.top = '0';
-// b.style.opacity = '1';
-// b.style.transition = 'all 1000ms';
-// }
+
+// helper function
+function changeCss(item,top,opacity,transition){
+  item.style.top = top;
+  item.style.opacity = opacity;
+  item.style.transition = transition;
+}
 
 function myFunction() {
   let a = document.querySelectorAll('.trans-para');
-  for (let i = 0; i < a.length; i++) {
-    a[i].style.top = '0';
-    a[i].style.opacity = '1';
-    a[i].style.transition = 'all 800ms';
-  }
-
+  // a.forEach(item => {
+  //   item.style.top = '0';
+  //   item.style.opacity = '1';
+  //   item.style.transition = 'all 800ms';
+  // })
+  a.forEach(item => changeCss(item,'0','1','all 800ms'))
+  
   let b = document.querySelectorAll('.trans-heading');
-  for (let j = 0; j < b.length; j++) {
-    b[j].style.top = '0';
-    b[j].style.opacity = '1';
-    b[j].style.transition = 'all 900ms';
-  }
-
+  b.forEach(item => changeCss(item,'0','1','all 900ms'))
+  
   let c = document.querySelectorAll('.trans-link');
-  for (let k = 0; k < b.length; k++) {
-    c[k].style.top = '0';
-    c[k].style.opacity = '1';
-    c[k].style.transition = 'all 900ms';
-  }
+  c.forEach(item => changeCss(item,'0','1','all 900ms'))
 }
 
 function newClass() {
   let trans = document.getElementsByClassName('hamburger')[0];
-  trans.className = 'newBurger';
-  trans.style.transition = 'all 700ms';
+  trans.className = 'newburger';
+  trans.style.transition = 'all 400ms';
 }
 
 function closeTab() {
-  document.getElementsByClassName('newBurger')[0].className = 'hamburger';
+  document.getElementsByClassName('newburger')[0].className = 'hamburger';
 }
